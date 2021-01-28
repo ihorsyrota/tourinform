@@ -1,0 +1,37 @@
+//font family
+$main-font: 'Montserrat', sans-serif;
+$secondary-font: 'Crimson Pro', serif;
+//$third-font: 'Ubuntu', sans-serif;
+
+// Our default baseline font size is 14px.
+// You can change that here.
+//$base-font-size: 62.5%;
+
+// No units on our line height!
+$base-line-height: normal;
+$max-width: 1586px;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px
+) !default;
+
+
+.container {
+    position: relative;
+    max-width: $max-width;
+    @include media-breakpoint-between(xl, $max-width) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

@@ -1,0 +1,25 @@
+// Base styles
+@import "core_project/bootstarp-custom-import";
+@import "core_project/fonts";
+@import "core_project/reset";
+@import "core_project/vars";
+@import "core_project/mixins";
+@import "core_project/breakpoints";
+@import "core_project/colors";
+@import "core_project/icons";
+@import "core_project/buttons";
+
+//slick carousel
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "node_modules/slick-carousel/slick/slick-theme.scss";
+
+// Layout
+@import "layout/common";
+@import "layout/navigation";
+@import "layout/modals";
+@import "layout/carousel";
+@import "layout/footer";
+@import "layout/search";
+@import "layout/404";
+@import "layout/breadcrumbs";
+@import "layout/img-hover";

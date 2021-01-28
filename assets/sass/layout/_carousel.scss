@@ -1,0 +1,169 @@
+.b-carousel {
+    @include media-breakpoint-down(lg) {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+    }
+    &-wrapper {
+        margin: 0 !important;
+        @include media-breakpoint-up(md) {
+            padding-left: 90px;
+        }
+    }
+    &-item {
+        background: rgba(0, 83, 77, 0.91);
+        margin: 0 15px;
+        padding: 21px 19px;
+        @include media-breakpoint-up(md) {
+            min-width: 290px;
+            width: 400px;
+        }
+        &:focus {
+            outline: none;
+        }
+        &:hover {
+            cursor: all-scroll;
+        }
+    }
+    &-item_title {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    &-item_sub_title {
+        font-family: $secondary-font;
+        font-size: 22px;
+        font-weight: 400;
+        min-height: 68px;
+    }
+    &-more_link {
+        color: $light;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .slick-next,
+    .slick-prev {
+        background: $primary-color;
+        bottom: 0;
+        height: 48px;
+        left: 0;
+        position: absolute;
+        top: auto;
+        transform: none;
+        width: 48px;
+    }
+    .slick-next {
+        @include icon(arrow_right-svg);
+    }
+    .slick-prev {
+        bottom: 68px;
+        @include icon(arrow_left-svg);
+    }
+    &-tools {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        padding-bottom: 30px;
+        padding-top: 18px;
+        @include media-breakpoint-up(xl) {
+            display: none;
+        }
+    }
+    &-tools_info {
+        @include icon(arrow_right-svg, after);
+        align-items: center;
+        display: inline-flex;
+        &::after {
+            color: $gray;
+            font-size: 10px;
+            margin-left: 23px;
+        }
+    }
+    .slick-dots {
+        display: none !important;
+    }
+}
+//gallery carousel
+.b-carousel_gallery-wrapper {
+    padding-bottom: 15px;
+}
+.b-carousel_gallery_nav {
+    margin: 0 -7px;
+    &-item {
+        outline: none;
+    }
+    &-item_content {
+        padding: 0 7px;
+    }
+}
+//time line slider
+.b-line_slider {
+    border-bottom: 3px solid $primary-color;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @include media-breakpoint-up(lg) {
+        border-bottom-width: 5px;
+        margin-bottom: 50px;
+    }
+    &-item {
+        cursor: pointer;
+        font: 16px $secondary-font;
+        height: 30px;
+        position: relative;
+        @include media-breakpoint-up(lg) {
+            font-size: 22px;
+            height: 50px;
+        }
+        &:hover {
+            color: $secondary-color;
+        }
+        &::before {
+            background: $primary-color;
+            border-radius: 50%;
+            bottom: -6px;
+            content: '';
+            height: 9px;
+            left: 0;
+            position: absolute;
+            transition-timing-function: cubic-bezier(0.64, 0.04, 0.35, 1);
+            width: 9px;
+            @include media-breakpoint-up(lg) {
+                bottom: -10px;
+                height: 15px;
+                width: 15px;
+            }
+        }
+        &.m-active {
+            color: $secondary-color;
+            &::before {
+                background: $secondary-color;
+            }
+            &::after {
+                border: 1px solid $secondary-color;
+                border-radius: 50%;
+                bottom: -11px;
+                content: '';
+                height: 19px;
+                left: -5px;
+                position: absolute;
+                transform: scale(1);
+                transition: all 300ms;
+                width: 19px;
+                @include media-breakpoint-up(lg) {
+                    bottom: -19px;
+                    height: 32px;
+                    left: -8px;
+                    width: 32px;
+                }
+            }
+        }
+        &:hover::after {
+            transform: scale(1.5);
+        }
+    }
+}

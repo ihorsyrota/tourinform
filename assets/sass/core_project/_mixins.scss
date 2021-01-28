@@ -1,0 +1,6 @@
+//font size mixin
+@mixin fontsize($sizeValue: 1.6, $font-weight: null) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+    font-weight: $font-weight;
+}

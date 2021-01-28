@@ -1,0 +1,66 @@
+[class^='imghvr-'], [class*=' imghvr-'] {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: $primary-color;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+[class^='imghvr-'] > img, [class*=' imghvr-'] > img {
+    max-width: 100%;
+    vertical-align: top;
+}
+[class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
+    align-items: flex-end;
+    background-color: transparentize($primary-color, 0.1);
+    bottom: 0;
+    color: #ffffff;
+    display: flex;
+    left: 0;
+    padding: 30px 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: $secondary-font;
+}
+[class^='imghvr-'] figcaption h1, [class^='imghvr-'] figcaption h2, [class^='imghvr-'] figcaption h3, [class^='imghvr-'] figcaption h4, [class^='imghvr-'] figcaption h5, [class^='imghvr-'] figcaption h6, [class*=' imghvr-'] figcaption h1, [class*=' imghvr-'] figcaption h2, [class*=' imghvr-'] figcaption h3, [class*=' imghvr-'] figcaption h4, [class*=' imghvr-'] figcaption h5, [class*=' imghvr-'] figcaption h6 {
+    color: $white;
+}
+[class^='imghvr-'] a, [class*=' imghvr-'] a {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+[class^='imghvr-'], [class*=' imghvr-'], [class^='imghvr-']:before,
+[class^='imghvr-']:after, [class*=' imghvr-']:before, [class*=' imghvr-']:after,
+[class^='imghvr-'] *, [class*=' imghvr-'] *, [class^='imghvr-'] *:before,
+[class^='imghvr-'] *:after, [class*=' imghvr-'] *:before, [class*=' imghvr-'] *:after {
+    box-sizing: border-box;
+    transition: all .35s ease;
+}
+[class^='imghvr-reveal-'] figcaption, [class*=' imghvr-reveal-'] figcaption {
+    opacity: 0;
+}
+[class^='imghvr-reveal-']:hover:before, [class*=' imghvr-reveal-']:hover:before {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+[class^='imghvr-reveal-']:hover figcaption, [class*=' imghvr-reveal-']:hover figcaption {
+    opacity: 1;
+    transition-delay: 0.1s;
+}
+.imghvr-reveal-up {
+    &:before {
+        transform: translateY(100%);
+    }
+}

@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "icons-font";
+    src: url('../css/fonts/icons-font.eot');
+    src: url('../css/fonts/icons-font.eot?#iefix') format('eot'),
+    url('../css/fonts/icons-font.woff2') format('woff2'),
+    url('../css/fonts/icons-font.woff') format('woff'),
+    url('../css/fonts/icons-font.ttf') format('truetype'),
+    url('../css/fonts/icons-font.svg#icons-font') format('svg');
+}
+
+@mixin icon-styles {
+    font-family: "icons-font";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none;
+    text-transform: none;
+}
+
+%icon {
+    @include icon-styles;
+}
+
+@function icon-char($filename) {
+    $char: "";
+
+    @if $filename == arrow-svg {
+    $char: "\E001";
+}
+    @if $filename == arrow_left-svg {
+    $char: "\E002";
+}
+    @if $filename == arrow_right-svg {
+    $char: "\E003";
+}
+    @if $filename == burger-svg {
+    $char: "\E004";
+}
+    @if $filename == calendar-svg {
+    $char: "\E005";
+}
+    @if $filename == facebook-svg {
+    $char: "\E006";
+}
+    @if $filename == filter-svg {
+    $char: "\E007";
+}
+    @if $filename == geo {
+    $char: "\E008";
+}
+    @if $filename == instagram-svg {
+    $char: "\E009";
+}
+    @if $filename == logo-svg {
+    $char: "\E00A";
+}
+    @if $filename == loop-svg {
+    $char: "\E00B";
+}
+    @if $filename == youtube-svg {
+    $char: "\E00C";
+}
+
+@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+&:#{$insert} {
+    @if $extend {
+        @extend %icon;
+    } @else {
+        @include icon-styles;
+    }
+    content: icon-char($filename);
+}
+}
+
+.icon-arrow-svg {
+    @include icon(arrow-svg);
+}
+.icon-arrow_left-svg {
+    @include icon(arrow_left-svg);
+}
+.icon-arrow_right-svg {
+    @include icon(arrow_right-svg);
+}
+.icon-burger-svg {
+    @include icon(burger-svg);
+}
+.icon-calendar-svg {
+    @include icon(calendar-svg);
+}
+.icon-facebook-svg {
+    @include icon(facebook-svg);
+}
+.icon-filter-svg {
+    @include icon(filter-svg);
+}
+.icon-geo {
+    @include icon(geo);
+}
+.icon-instagram-svg {
+    @include icon(instagram-svg);
+}
+.icon-logo-svg {
+    @include icon(logo-svg);
+}
+.icon-loop-svg {
+    @include icon(loop-svg);
+}
+.icon-youtube-svg {
+    @include icon(youtube-svg);
+}
+

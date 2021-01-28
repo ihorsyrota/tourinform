@@ -1,0 +1,32 @@
+.b-search_results {
+    color: $text;
+    &-title {
+        font-size: 25px;
+        margin-bottom: 65px;
+        @include media-breakpoint-up(lg) {
+            font-size: 30px;
+        }
+    }
+    &-item {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 22px;
+        @include media-breakpoint-up(lg) {
+            font-size: 25px;
+        }
+    }
+    &-item_title {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 22px;
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 20px;
+            font-size: 29px;
+        }
+    }
+    &-item_sub_title {
+        display: block;
+    }
+}
+
+

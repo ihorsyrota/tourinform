@@ -1,0 +1,14 @@
+.button {
+    border: 0;
+    border-radius: 0;
+    font: 22px $secondary-font;
+    padding: 18px 10px;
+    &-secondary {
+        background: $secondary-color;
+        color: $white;
+    }
+    &-transparent {
+        background: $transparent;
+        color: $secondary-color;
+    }
+}

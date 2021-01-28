@@ -1,0 +1,19 @@
+.b-breadcrumb {
+    background: transparent;
+    padding: 0;
+    &-item {
+        a {
+            color: $secondary-color;
+        }
+        &.active {
+            color: $white;
+        }
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        color: $white;
+        padding-right: 1px;
+    }
+    .breadcrumb-item+.breadcrumb-item {
+        padding-left: 1px;
+    }
+}

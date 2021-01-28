@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <title>Tourinform catalog</title>
+        <!--CSS-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    </head>
+    <body>
+        <main class="b-main m-catalog_pp">
+            <header class="b-mobile-header js-mobile-header">
+                <a href="home-page.html" class="b-mobile_logo">
+                    <img class="b-logo-img" src="img/logo-head.svg" width="44" height="26" alt="">
+                </a>
+                <div class="b-mobile_titles">
+                    <h2 class="b-mobile_titles-title">Tourinform</h2>
+                    <h5 class="b-mobile_titles-sub_title">ZAKARPATTIA</h5>
+                </div>
+                <nav role="navigation" class="b-mobile_nav">
+                    <div id="menuToggle" class="b-mobile_nav-toggle">
+                        <input id="js-menu-toggle" type="checkbox" class="b-mobile_nav-input"/>
+                        <span class="b-mobile_nav-hamburger_icon"></span>
+                        <span class="b-mobile_nav-hamburger_icon m-middle"></span>
+                        <span class="b-mobile_nav-hamburger_icon"></span>
+                        <ul id="menu" class="b-mobile_nav-list">
+                            <li class="b-nav-item">
+                                <a class="b-nav-item_link" href="#">Дестинації</a>
+                            </li>
+                            <li class="b-nav-item">
+                                <a class="b-nav-item_link" href="#">Екскурсії</a>
+                            </li>
+                            <li class="b-nav-item">
+                                <a class="b-nav-item_link" href="#">Блог</a>
+                            </li>
+                            <li class="b-nav-item">
+                                <a class="b-nav-item_link" href="#">Каталог</a>
+                            </li>
+                            <li class="b-nav-item">
+                                <a class="b-nav-item_link" href="#">Маршрути</a>
+                            </li>
+                            <li class="b-nav-item">
+                                <a class="b-nav-item_link" href="#">Співпраця</a>
+                            </li>
+                            <li class="b-nav-item">
+                                <a class="b-nav-item_link b-search" href="mobile-search.html">Пошук</a>
+                            </li>
+                            <li class="b-nav-item">
+                                <div class="b-language">
+                                    <a href="" class="b-language-item m-active">UA</a>
+                                    <a href="" class="b-language-item">RU</a>
+                                    <a href="" class="b-language-item">EN</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section class="b-main_section">
+                <div class="b-main_section-container container js-container">
+                    <header class="b-header">
+                        <nav class="b-nav">
+                            <ul class="b-nav-list">
+                                <li class="b-nav-item">
+                                    <a class="b-nav-item_link" href="#about">Дестинації</a>
+                                </li>
+                                <li class="b-nav-item">
+                                    <a class="b-nav-item_link" href="#partners">Екскурсії</a>
+                                </li>
+                                <li class="b-nav-item">
+                                    <a class="b-nav-item_link m-active" href="blog-pp.html">Блог</a>
+                                </li>
+                                <li class="b-nav-item">
+                                    <a class="b-nav-item_link" href="#contacts">Каталог</a>
+                                </li>
+                                <li class="b-nav-item">
+                                    <a class="b-nav-item_link" href="#contacts">Маршрути</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="home-page.html" class="b-logo">
+                            <img class="b-logo-img" src="img/logo-head.svg" width="84" height="51" alt="">
+                            <span class="b-logo-text">
+                                Tourinform
+                                <span class="b-logo-sub_text">ZAKARPATTIA</span>
+                            </span>
+                        </a>
+                        <div class="b-tools">
+                            <div class="b-search" data-toggle="modal" data-target="#search-modal"></div>
+                            <div class="b-language m-dropdown_view btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    UA
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item b-language-item" href="#">RU</a>
+                                    <a class="dropdown-item b-language-item" href="#">EN</a>
+                                </div>
+                            </div>
+                            <nav class="b-nav">
+                                <ul class="b-nav-list">
+                                    <li class="b-nav-item">
+                                        <a class="b-nav-item_link" href="">Співпраця</a>
+                                    </li>
+                                    <li class="b-nav-item">
+                                        <a class="b-nav-item_link" href="contacts.html">Контакти</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
+                    <div class="b-blog_head">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb b-breadcrumb">
+                                <li class="breadcrumb-item b-breadcrumb-item">
+                                    <a href="#">Каталог</a>
+                                </li>
+                                <li class="breadcrumb-item b-breadcrumb-item active" aria-current="page">Ужгородський
+                                    район
+                                </li>
+                                <li class="breadcrumb-item b-breadcrumb-item active" aria-current="page">Кав’ярні</li>
+                            </ol>
+                        </nav>
+                        <h1 class="b-blog_head-title">Кав’ярня «Riverside»</h1>
+                        <p class="b-location_label">Ужгород, площа Євгена Фенцика, 13</p>
+                    </div>
+                    <div class="b-stuff_info">
+                        <div class="b-stuff_info-item">
+                            <div class="b-stuff_info-lg">
+                                Пн-Нд
+                            </div>
+                            <div class="b-stuff_info-sm">
+                                Робочі
+                                дні тижня
+                            </div>
+                        </div>
+                        <div class="b-stuff_info-item">
+                            <div class="b-stuff_info-lg">
+                                50
+                            </div>
+                            <div class="b-stuff_info-sm">
+                                Графік роботи
+                                <br/>
+                                в будні
+                            </div>
+                        </div>
+                        <div class="b-stuff_info-item">
+                            <div class="b-stuff_info-lg">
+                                9-16
+                            </div>
+                            <div class="b-stuff_info-sm">
+                                Графік роботи
+                                <br/>
+                                у вихідні
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="d-flex justify-content-center container b-banner">
+                <a href="https://placeholder.com">
+                    <img src="https://via.placeholder.com/970x90"/>
+                </a>
+            </div>
+            <section class="b-article_section container">
+                <article class="row">
+                    <div class="col-sm-7 b-article_section-col1">
+                        <p class="b-slider_hint">Підказка по слайдеру</p>
+                        <div class="b-line_slider">
+                            <div class="b-line_slider-item">
+                                Опис
+                            </div>
+                            <div class="b-line_slider-item m-active">
+                                Фото
+                            </div>
+                            <div class="b-line_slider-item">
+                                Рекомендації
+                            </div>
+                            <div class="b-line_slider-item">
+                                Меню
+                            </div>
+                            <div class="b-line_slider-item">
+                                Контакти
+                            </div>
+                        </div>
+                        <h2 class="b-article_section-title">Фото</h2>
+                        <div class="b-carousel_gallery">
+                            <div class=" b-carousel_gallery-wrapper js-carousel_gallery">
+                                <div class="b-carousel_gallery-item">
+                                    <img src="img/content/img3.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="b-carousel_gallery-item">
+                                    <img src="img/blog-bg.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="b-carousel_gallery-item">
+                                    <img src="img/homepage.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="b-carousel_gallery-item">
+                                    <img src="img/contact-bg.jpg" class="img-fluid" alt="">
+                                </div>
+                                <div class="b-carousel_gallery-item">
+                                    <img src="img/blog-pp.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="b-carousel_gallery_nav js-carousel_gallery_nav">
+                                <div class="b-carousel_gallery_nav-item">
+                                    <div class="b-carousel_gallery_nav-item_content">
+                                        <img src="img/content/img3.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="b-carousel_gallery_nav-item">
+                                    <div class="b-carousel_gallery_nav-item_content">
+                                        <img src="img/blog-bg.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="b-carousel_gallery_nav-item">
+                                    <div class="b-carousel_gallery_nav-item_content">
+                                        <img src="img/homepage.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="b-carousel_gallery_nav-item">
+                                    <div class="b-carousel_gallery_nav-item_content">
+                                        <img src="img/contact-bg.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="b-carousel_gallery_nav-item">
+                                    <div class="b-carousel_gallery_nav-item_content">
+                                        <img src="img/blog-pp.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="b-divider"/>
+                        <div class="b-faq">
+                            <h2 class="b-faq-title">Часті запитання</h2>
+                            <div class="b-faq-item">
+                                <a class="b-faq-item_title collapsed" data-toggle="collapse"
+                                   href="#faq1" role="button" aria-expanded="false"
+                                   aria-controls="collapseExample">
+                                    Як дістатися Ужгорода власним авто?
+                                </a>
+                                <div class="collapse" id="faq1">
+                                    <p class="b-faq-item_description">
+                                        Радимо прочитати нашу статтю про
+                                        <a href="" class="color_secondary">Найпопулярніші автомобільні маршрути,
+                                            що ведуть до Ужгорода
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="b-faq-item">
+                                <a class="b-faq-item_title collapsed" data-toggle="collapse"
+                                   href="#faq2" role="button" aria-expanded="false"
+                                   aria-controls="faq2">
+                                    Як дістатися Ужгорода власним авто Як дістатися Ужгорода власним авто?
+                                </a>
+                                <div class="collapse" id="faq2">
+                                    <p class="b-faq-item_description">
+                                        Радимо прочитати нашу статтю про
+                                        <a href="" class="color_secondary">Найпопулярніші автомобільні маршрути,
+                                            що ведуть до Ужгорода Як дістатися Ужгорода власним авто
+                                        </a>
+                                        Як дістатися Ужгорода власним авто Як дістатися Ужгорода власним авто Як
+                                        дістатися Ужгорода власним авто
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row b-info_block">
+                            <div class="col-sm-6 mb-4">
+                                <a href="" class="b-news_section-article">
+                                    <figure class="b-figure">
+                                        <p>
+                                            <img class="img-fluid b-figure-img" src="img/content/img1.jpg" alt="">
+                                        </p>
+                                        <figcaption class="b-figure-caption">
+                                            <p class="color_primary">Назва новини Назва новини Назва новини</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a href="" class="b-news_section-article">
+                                    <figure class="b-figure">
+                                        <p>
+                                            <img class="img-fluid b-figure-img" src="img/content/img2.jpg" alt="">
+                                        </p>
+                                        <figcaption class="b-figure-caption">
+                                            <p class="color_primary">Урочище Чизай, Берегове</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mb-5 b-banner">
+                            <a href="https://placeholder.com">
+                                <img src="https://via.placeholder.com/970x90"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 b-article_section-col2">
+                        <div class="b-info_block">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="b-info_block-sub_title color_secondary">Рекомендуємо зупинитись</h3>
+                                <a href="" class="b-link">Більше</a>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-6">
+                                    <a href="" class="b-info_block-preview_img">
+                                        <figure class="imghvr-reveal-up">
+                                            <img src="img/content/img2.jpg" class="img-fluid" alt="example-image">
+                                            <figcaption>
+                                                <p>Ужгородський
+                                                    <br/>
+                                                    скансен
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="" class="b-news_section-article">
+                                        <figure class="imghvr-reveal-up">
+                                            <img src="img/content/img1.jpg" class="img-fluid" alt="example-image">
+                                            <figcaption>
+                                                <p>Ужгородський замок -
+                                                    пішохідна екскурсія
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="" class="b-news_section-article">
+                                        <figure class="imghvr-reveal-up">
+                                            <img src="img/content/img2.jpg" class="img-fluid" alt="example-image">
+                                            <figcaption>
+                                                <p>Ужгородський
+                                                    <br/>
+                                                    скансен
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="" class="b-news_section-article">
+                                        <figure class="imghvr-reveal-up">
+                                            <img src="img/content/img1.jpg" class="img-fluid" alt="example-image">
+                                            <figcaption>
+                                                <p>Ужгородський замок -
+                                                    пішохідна екскурсія
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between b-banner row mb-5">
+                            <div class="col-6">
+                                <a href="https://placeholder.com">
+                                    <img src="https://via.placeholder.com/250x300"/>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="https://placeholder.com">
+                                    <img src="https://via.placeholder.com/250x300"/>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="b-info_block">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="b-info_block-sub_title color_secondary">Корисні поради</h3>
+                                <a href="" class="b-link">Більше</a>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-6">
+                                    <a href="" class="b-info_block-preview_img">
+                                        <figure class="imghvr-reveal-up">
+                                            <img src="img/content/img2.jpg" class="img-fluid" alt="example-image">
+                                            <figcaption>
+                                                <p>Ужгородський
+                                                    <br/>
+                                                    скансен
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="" class="b-news_section-article">
+                                        <figure class="imghvr-reveal-up">
+                                            <img src="img/content/img1.jpg" class="img-fluid" alt="example-image">
+                                            <figcaption>
+                                                <p>Ужгородський замок -
+                                                    пішохідна екскурсія
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="" class="b-news_section-article">
+                                        <figure class="imghvr-reveal-up">
+                                            <img src="img/content/img2.jpg" class="img-fluid" alt="example-image">
+                                            <figcaption>
+                                                <p>Ужгородський
+                                                    <br/>
+                                                    скансен
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="" class="b-news_section-article">
+                                        <figure class="imghvr-reveal-up">
+                                            <img src="img/content/img1.jpg" class="img-fluid" alt="example-image">
+                                            <figcaption>
+                                                <p>Ужгородський замок -
+                                                    пішохідна екскурсія
+                                                </p>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mb-5 b-banner">
+                            <a href="https://placeholder.com">
+                                <img src="https://via.placeholder.com/400x120"/>
+                            </a>
+                        </div>
+                        <div class="b-info_block">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="b-info_block-sub_title color_secondary">Статті</h3>
+                                <a href="" class="b-link">Більше</a>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-sm-12">
+                                    <figure class="b-figure m-type-2 row">
+                                        <a href="" class="b-figure-image col-6">
+                                            <img class="img-fluid b-figure-img" src="img/content/img2.jpg" alt="">
+                                        </a>
+                                        <figcaption class="b-figure-caption col-6">
+                                            <p class="color_primary b-figure-caption_title">Ужгород - місто над Ужем</p>
+                                            <p class="color_secondary">Новини</p>
+                                            <p class="color_secondary b-date_label">01.05.2020</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12">
+                                    <figure class="b-figure m-type-2 row">
+                                        <a href="" class="b-figure-image col-6">
+                                            <img class="img-fluid b-figure-img" src="img/content/img2.jpg" alt="">
+                                        </a>
+                                        <figcaption class="b-figure-caption col-6">
+                                            <p class="color_primary b-figure-caption_title">Ужгород - місто над Ужем</p>
+                                            <p class="color_secondary">Новини</p>
+                                            <p class="color_secondary b-date_label">01.05.2020</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="b-info_block">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h3 class="b-info_block-sub_title color_secondary">Корисні контакти</h3>
+                            </div>
+                            <div class="row mb-5">
+                                <div class="col-sm-12">
+                                    <figure class="b-figure m-type-2 m-type-sm">
+                                        <a href="" class="b-figure-image">
+                                            <img class="b-figure-img" width="114" height="114" src="img/content/ceo.jpg"
+                                                 alt="">
+                                        </a>
+                                        <figcaption class="b-figure-caption">
+                                            <p>Олександр Коваль</p>
+                                            <p>керівник Tourinform</p>
+                                            <p>+380 99 24 65 430</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-12">
+                                    <figure class="b-figure m-type-2 m-type-sm">
+                                        <a href="" class="b-figure-image">
+                                            <img class="b-figure-img" width="114" height="114"
+                                                 src="img/content/img2.jpg" alt="">
+                                        </a>
+                                        <figcaption class="b-figure-caption">
+                                            <p>Туроператор «Про Карпати»</p>
+                                            <p>+380 66 28 65 455</p>
+                                            <p>+380 96 34 65 988</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <footer class="b-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p>Телефон</p>
+                            <p>0-50-54-9-466-4</p>
+                            <p>Зворотній зв’язок</p>
+                            <p>
+                                <a class="b-footer-nav_list_item_link" href="mailto:tourinform.info@gmail.com">
+                                    tourinform.info@gmail.com
+                                </a>
+                            </p>
+                            <p>
+                                <a class="color_secondary" href="">Підписатися на оновлення</a>
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <nav class="b-footer-nav">
+                                <ul class="b-footer-nav_list">
+                                    <li class="b-footer-nav_list_item">
+                                        <a class="b-footer-nav_list_item_link" href="">Корисна інформація</a>
+                                    </li>
+                                    <li class="b-footer-nav_list_item">
+                                        <a class="b-footer-nav_list_item_link" href="">Про Tourinform</a>
+                                    </li>
+                                    <li class="b-footer-nav_list_item">
+                                        <a class="b-footer-nav_list_item_link" href="">Реклама та просування</a>
+                                    </li>
+                                    <li class="b-footer-nav_list_item">
+                                        <a class="b-footer-nav_list_item_link" href="">Політика конфіденційності</a>
+                                    </li>
+                                    <li class="b-footer-nav_list_item">
+                                        Ми у соцмережах:
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row pt-5">
+                        <div class="col-sm-6 b-footer-col1">
+                            <div class="b-copyright">
+                                &copy; TourInform.org.ua 2005 - 2020. All Rights Reserved.
+                                <br/>
+                                При копіюванні матеріалів, гіперпосилання на
+                                <br/>
+                                <a class="color_secondary" href="tourinform.org.ua">tourinform.org.ua</a>
+                                обов'язкове.
+                            </div>
+                        </div>
+                        <div class="col-sm-6 b-footer-col2">
+                            <div class="b-social">
+                                <a href="" class="b-social-icon m-facebook"></a>
+                                <a href="" class="b-social-icon m-instagram"></a>
+                                <a href="" class="b-social-icon m-youtube"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-logo">
+                        <img class="b-logo-img" src="img/logo-head.svg" width="84" height="51" alt="">
+                        <div class="b-logo-text">
+                            Tourinform
+                            <div class="b-logo-sub_text">ZAKARPATTIA</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <!--SEARCH MODAL-->
+        <div id="search-modal"
+             class="modal fade"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="b-search_modal modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="b-search_modal-tools">
+                            <div class="row">
+                                <div class="b-search_modal-tools_lbl col-lg-2">
+                                    Пошук
+                                </div>
+                                <div class="b-search_modal-tools_search input-group col-lg-6">
+                                    <input type="text" class="b-search_modal-tools_inp form-control" placeholder=""
+                                           aria-label="Search" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn b-search_modal-tools_button" type="button"
+                                                id="button-addon2">
+                                            Пошук
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <select class="b-search_modal-tools_select custom-select" id="inputGroupSelect01">
+                                        <option selected>Шукати за категорією</option>
+                                        <option value="1">Категорія 1</option>
+                                        <option value="2">Категорія 2 Two</option>
+                                        <option value="3">Категорія 3 Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="b-search_results">
+                            <a href="" class="b-search_results-item">
+                                <span class="b-search_results-item_title">Результати пошуку в категорії «Дестинації»
+                                </span>
+                                <span class="b-search_results-item_sub_title">Ужгород</span>
+                                <span class="b-search_results-item_sub_title color_secondary">Ужгородський район</span>
+                            </a>
+                            <a href="" class="b-search_results-item">
+                                <span class="b-search_results-item_title">Результати пошуку в категорії «Дестинації»
+                                </span>
+                                <span class="b-search_results-item_sub_title">Ужгород</span>
+                                <span class="b-search_results-item_sub_title color_secondary">Ужгородський район</span>
+                            </a>
+                            <a href="" class="b-search_results-item">
+                                <span class="b-search_results-item_title">Результати пошуку в категорії «Дестинації»
+                                </span>
+                                <span class="b-search_results-item_sub_title">Ужгород</span>
+                                <span class="b-search_results-item_sub_title color_secondary">Ужгородський район</span>
+                            </a>
+                            <a href="" class="b-search_results-item">
+                                <span class="b-search_results-item_title">Результати пошуку в категорії «Дестинації»
+                                </span>
+                                <span class="b-search_results-item_sub_title">Ужгород</span>
+                                <span class="b-search_results-item_sub_title color_secondary">Ужгородський район</span>
+                            </a>
+                            <a href="" class="b-search_results-item">
+                                <span class="b-search_results-item_title">Результати пошуку в категорії «Дестинації»
+                                </span>
+                                <span class="b-search_results-item_sub_title">Ужгород</span>
+                                <span class="b-search_results-item_sub_title color_secondary">Ужгородський район</span>
+                            </a>
+                            <a href="" class="b-search_results-item">
+                                <span class="b-search_results-item_title">Результати пошуку в категорії «Дестинації»
+                                </span>
+                                <span class="b-search_results-item_sub_title">Ужгород</span>
+                                <span class="b-search_results-item_sub_title color_secondary">Ужгородський район</span>
+                            </a>
+                            <a href="" class="b-search_results-item">
+                                <span class="b-search_results-item_title">Результати пошуку в категорії «Дестинації»
+                                </span>
+                                <span class="b-search_results-item_sub_title">Ужгород</span>
+                                <span class="b-search_results-item_sub_title color_secondary">Ужгородський район</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-center justify-content-md-end">
+                        <a href="" class="b-more_link">
+                            <span>
+                                Переглянути все
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="filter-modal"
+             class="modal fade"
+             tabindex="-1"
+             role="dialog"
+             aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="b-filter_modal modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        Фільтр
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="btn-close">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-5">
+                            <select class="b-search_modal-tools_select custom-select">
+                                <option selected>Оберіть категорію</option>
+                                <option value="1">Категорія 1</option>
+                                <option value="2">Категорія 2 Two</option>
+                                <option value="3">Категорія 3 Three</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <select class="b-search_modal-tools_select custom-select">
+                                <option selected>Оберіть автора</option>
+                                <option value="1">Категорія 1</option>
+                                <option value="2">Категорія 2 Two</option>
+                                <option value="3">Категорія 3 Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer row justify-content-between">
+                        <div class="col">
+                            <button type="button" class="btn button button-transparent color_secondary"
+                                    data-dismiss="modal">Скинути
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn button button-secondary ">Застосувати</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/main.min.js"></script>
+</html>
